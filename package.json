@@ -1,5 +1,5 @@
 {
-  "name": "zod-form-data",
+  "name": "zod-validated-form-data",
   "version": "0.0.0",
   "description": "A lightweight library for validating formData with Zod",
   "license": "ISC",

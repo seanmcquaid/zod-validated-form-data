@@ -1,22 +1,21 @@
-# zod-form-data
+# zod-validated-form-data
 
 A lightweight library for validating formData with Zod
-
 
 ## Installation
 
 ```bash
-npm install zod-form-data
+npm install zod-validated-form-data
 ```
 
 ## Usage
 
 ```typescript
-import { getValidatedFormData } from 'zod-form-data';
+import { getValidatedFormData } from 'zod-validated-form-data';
 
 const schema = z.object({
   name: z.string(),
-  age: z.number(),
+  age: z.coerce.number(),
 });
 
 const formData = new FormData();
