@@ -7,16 +7,21 @@ describe('getValidatedFormData', () => {
       it('returns an object with errors and defaultValues from the raw formData when the form data is invalid', () => {
         const formData = new FormData();
 
-        formData.append('name', 'John Doe');
+        formData.append('name', 'Hello there John Doe');
 
         const result = getValidatedFormData({
           schema: z
             .object({ name: z.string().min(10) })
-            .refine(data => data.name === 'John Doe', {
-              message: 'Name must be John Doe',
+            .refine(data => data.name === 'Hello John Doe', {
+              message: 'Name must be Hello John Doe',
               path: ['name'],
             }),
           formData,
+        });
+
+        expect(result).toEqual({
+          errors: { name: 'Name must be Hello John Doe' },
+          defaultValues: { name: 'Hello there John Doe' },
         });
       });
       it('returns an object with data and defaultValues from the validated formData when the form data is valid', () => {

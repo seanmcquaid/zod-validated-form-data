@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 type SchemaType =
   | z.ZodObject<z.ZodRawShape>
-  | z.ZodEffects<z.ZodObject<{}, 'strip', z.ZodTypeAny, {}, {}>, {}, {}>;
+  | z.ZodEffects<z.ZodObject<z.ZodRawShape>>;
 
 const getValidatedFormData = <T extends SchemaType>({
   schema,

@@ -1,9 +1,9 @@
 {
   "name": "zod-form-data",
   "version": "0.0.0",
-  "description": "",
+  "description": "A lightweight library for validating formData with Zod",
   "license": "ISC",
-  "author": "",
+  "author": "Sean McQuaid",
   "sideEffects": false,
   "exports": {
     "import": {

@@ -1,6 +1,7 @@
 # zod-form-data
 
-This is a simple form data parser for Zod.
+A lightweight library for validating formData with Zod
+
 
 ## Installation
 
