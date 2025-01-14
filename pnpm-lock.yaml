@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@arethetypeswrong/cli':
         specifier: ^0.17.0
-        version: 0.17.2
+        version: 0.17.3
       '@changesets/cli':
         specifier: ^2.27.9
         version: 2.27.11
@@ -84,13 +84,13 @@ packages:
   '@andrewbranch/untar.js@1.0.3':
     resolution: {integrity: sha512-Jh15/qVmrLGhkKJBdXlK1+9tY4lZruYjsgkDFj08ZmDiWVBLJcqkok7Z0/R0In+i1rScBpJlSvrTS2Lm41Pbnw==}
 
-  '@arethetypeswrong/cli@0.17.2':
-    resolution: {integrity: sha512-/u2VcQJ8PKc4hcao/vXnHrYLEI/sQqKarbHi+NEIfvdymaW5o62XOCXy2yvalQa/vR+AAD/QNEgAUzHo5f7hrw==}
+  '@arethetypeswrong/cli@0.17.3':
+    resolution: {integrity: sha512-wI9ZSTweunmzHboSyYtWRFpba9fM9mpX1g7EUoRr+86zHSd7NR7svb6EmJD2hv1V+SoisB2fERu6EQGGEfQ8oQ==}
     engines: {node: '>=18'}
     hasBin: true
 
-  '@arethetypeswrong/core@0.17.2':
-    resolution: {integrity: sha512-JYeLgS4rQ2l3gHCabaka3atsEyskfpx+WqUbo+6l8LApILJgr0/XDb7KNC9Ovevp4iPVF2Q73oshpgOKJ3uDRQ==}
+  '@arethetypeswrong/core@0.17.3':
+    resolution: {integrity: sha512-2TB7O5JmC7UX7QHRGGftxRVQjV4Ce6oOIDGIDDERyT9dQ8lK/tRGfFubzO80rWeXm/gSrA8jirlXSWSE1i5ynQ==}
     engines: {node: '>=18'}
 
   '@babel/runtime@7.22.6':
@@ -1106,10 +1106,6 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
-
-  chalk@5.3.0:
-    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   chalk@5.4.1:
     resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
@@ -2896,9 +2892,9 @@ snapshots:
 
   '@andrewbranch/untar.js@1.0.3': {}
 
-  '@arethetypeswrong/cli@0.17.2':
+  '@arethetypeswrong/cli@0.17.3':
     dependencies:
-      '@arethetypeswrong/core': 0.17.2
+      '@arethetypeswrong/core': 0.17.3
       chalk: 4.1.2
       cli-table3: 0.6.5
       commander: 10.0.1
@@ -2906,7 +2902,7 @@ snapshots:
       marked-terminal: 7.1.0(marked@9.1.4)
       semver: 7.6.0
 
-  '@arethetypeswrong/core@0.17.2':
+  '@arethetypeswrong/core@0.17.3':
     dependencies:
       '@andrewbranch/untar.js': 1.0.3
       cjs-module-lexer: 1.4.1
@@ -3881,8 +3877,6 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chalk@5.3.0: {}
-
   chalk@5.4.1: {}
 
   char-regex@1.0.2: {}
@@ -4750,7 +4744,7 @@ snapshots:
   marked-terminal@7.1.0(marked@9.1.4):
     dependencies:
       ansi-escapes: 7.0.0
-      chalk: 5.3.0
+      chalk: 5.4.1
       cli-highlight: 2.1.11
       cli-table3: 0.6.5
       marked: 9.1.4
